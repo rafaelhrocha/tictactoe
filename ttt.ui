@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1000</width>
+     <height>800</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>800</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>800</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#242a38;</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1001</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="container_header">
+      <item row="0" column="0">
+       <spacer name="verticalSpacer_header">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:#FF7582;
+font-size: 25px;
+font-family: Segoe Print;</string>
+        </property>
+        <property name="text">
+         <string>TIC TAC TOE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>149</y>
+       <width>1001</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="container_body">
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer_left_body">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <widget class="QWidget" name="widget_board" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>500</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:#FEFEFE;
+border: 2px solid;
+border-color:transparent;
+border-radius: 8px;</string>
+        </property>
+        <widget class="Line" name="line_vertical_1">
+         <property name="geometry">
+          <rect>
+           <x>166</x>
+           <y>30</y>
+           <width>2</width>
+           <height>340</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>2</width>
+           <height>340</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>2</width>
+           <height>340</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#000000;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_horizontal_1">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>133</y>
+           <width>440</width>
+           <height>2</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>440</width>
+           <height>2</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>440</width>
+           <height>2</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#000000;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_horizontal_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>266</y>
+           <width>440</width>
+           <height>2</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>440</width>
+           <height>2</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>440</width>
+           <height>2</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#000000;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_vertical_2">
+         <property name="geometry">
+          <rect>
+           <x>332</x>
+           <y>30</y>
+           <width>2</width>
+           <height>340</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>340</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>2</width>
+           <height>340</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#000000;</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos00">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos01">
+         <property name="geometry">
+          <rect>
+           <x>167</x>
+           <y>0</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos02">
+         <property name="geometry">
+          <rect>
+           <x>334</x>
+           <y>0</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>134</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos11">
+         <property name="geometry">
+          <rect>
+           <x>167</x>
+           <y>134</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos12">
+         <property name="geometry">
+          <rect>
+           <x>333</x>
+           <y>134</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos20">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>267</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos21">
+         <property name="geometry">
+          <rect>
+           <x>167</x>
+           <y>267</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Button_pos22">
+         <property name="geometry">
+          <rect>
+           <x>333</x>
+           <y>267</y>
+           <width>166</width>
+           <height>133</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>166</width>
+           <height>133</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:#FEFEFEFE;
+}
+
+QPushButton::hover
+{
+background-color:#e8e8e8;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <spacer name="horizontalSpacer_right_body">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>589</y>
+       <width>1001</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="container_footer">
+      <property name="topMargin">
+       <number>15</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>10</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="0" column="4">
+       <spacer name="horizontalSpacer_right_bot">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_pvc">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+color:#FEFEFE;
+background-color:#355C7D;
+font-size: 12px;
+font-weight: bold;
+border: 0px solid;
+border-color:transparent;
+border-radius: 8px;
+}
+
+QPushButton::hover
+{
+color:#FEFEFE;
+background-color:#49769c;
+font-size: 12px;
+}
+
+QPushButton::pressed
+{
+color:#FEFEFE;
+background-color:#49769c;
+font-size: 13px;
+border: 2px solid;
+border-color:transparent;
+border-radius: 8px;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>PLAYER VS CPU</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_pvp">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+color:#FEFEFE;
+background-color:#355C7D;
+font-size: 12px;
+font-weight: bold;
+border: 0px solid;
+border-color:transparent;
+border-radius: 8px;
+}
+
+QPushButton::hover
+{
+color:#FEFEFE;
+background-color:#49769c;
+font-size: 12px;
+}
+
+QPushButton::pressed
+{
+color:#FEFEFE;
+background-color:#49769c;
+font-size: 13px;
+border: 2px solid;
+border-color:transparent;
+border-radius: 8px;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>PLAYER VS PLAYER</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <spacer name="verticalSpacer_bot">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer_left_bot">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButton_cvc">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+color:#FEFEFE;
+background-color:#355C7D;
+font-size: 12px;
+font-weight: bold;
+border: 0px solid;
+border-color:transparent;
+border-radius: 8px;
+}
+
+QPushButton::hover
+{
+color:#FEFEFE;
+background-color:#49769c;
+font-size: 12px;
+}
+
+QPushButton::pressed
+{
+color:#FEFEFE;
+background-color:#49769c;
+font-size: 13px;
+border: 2px solid;
+border-color:transparent;
+border-radius: 8px;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>CPU VS CPU</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
