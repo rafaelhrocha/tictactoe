@@ -1,1 +1,1 @@
- pyuic5 -x .\ttt.ui -o ttt.py
+ pyuic5 -x .\mainWindow.ui -o mainWindow.py
