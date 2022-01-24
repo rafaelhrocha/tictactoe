@@ -2,7 +2,7 @@ from mainWindow import Ui_MainWindow
 
 class Buttons(Ui_MainWindow):
     def __init__(self) -> None:
-        pass
+        super().__init__()
 
     def checkPressedButons(self):
         self.button_pos00.clicked.connect(lambda: self.updateDrawBoard( self.button_pos00, self.symbol))
@@ -15,9 +15,9 @@ class Buttons(Ui_MainWindow):
         self.button_pos21.clicked.connect(lambda: self.updateDrawBoard( self.button_pos21, self.symbol))
         self.button_pos22.clicked.connect(lambda: self.updateDrawBoard( self.button_pos22, self.symbol))
 
-        self.pushButton_cvc.clicked.connect(lambda: self.gameSelect("CVC"))
-        self.pushButton_pvc.clicked.connect(lambda: self.gameSelect("PVC"))
-        self.pushButton_pvp.clicked.connect(lambda: self.gameSelect("PVP"))
+        self.pushButton_cvc.clicked.connect(self.gameSelectCvC)
+        self.pushButton_pvc.clicked.connect(self.gameSelectPvC)
+        self.pushButton_pvp.clicked.connect(self.gameSelectPvP)
 
         
 

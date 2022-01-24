@@ -38,19 +38,19 @@ class Ui_MainWindow(object):
         self.container_header.setObjectName("container_header")
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.container_header.addItem(spacerItem, 0, 0, 1, 1)
-        self.title = QtWidgets.QLabel(self.gridLayoutWidget)
-        self.title.setMinimumSize(QtCore.QSize(200, 100))
-        self.title.setMaximumSize(QtCore.QSize(200, 100))
+        self.header_text = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.header_text.setMinimumSize(QtCore.QSize(200, 100))
+        self.header_text.setMaximumSize(QtCore.QSize(200, 100))
         font = QtGui.QFont()
         font.setFamily("Segoe Print")
         font.setPointSize(-1)
-        self.title.setFont(font)
-        self.title.setStyleSheet("color:#FF7582;\n"
+        self.header_text.setFont(font)
+        self.header_text.setStyleSheet("color:#FF7582;\n"
 "font-size: 25px;\n"
 "font-family: Segoe Print;")
-        self.title.setAlignment(QtCore.Qt.AlignCenter)
-        self.title.setObjectName("title")
-        self.container_header.addWidget(self.title, 1, 0, 1, 1)
+        self.header_text.setAlignment(QtCore.Qt.AlignCenter)
+        self.header_text.setObjectName("header_text")
+        self.container_header.addWidget(self.header_text, 1, 0, 1, 1)
         self.gridLayoutWidget_2 = QtWidgets.QWidget(self.widget)
         self.gridLayoutWidget_2.setGeometry(QtCore.QRect(-1, 149, 1001, 441))
         self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
@@ -393,7 +393,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.title.setText(_translate("MainWindow", "TIC TAC TOE"))
+        self.header_text.setText(_translate("MainWindow", "TIC TAC TOE"))
         self.pushButton_pvc.setText(_translate("MainWindow", "PLAYER VS CPU"))
         self.pushButton_pvp.setText(_translate("MainWindow", "PLAYER VS PLAYER"))
         self.pushButton_cvc.setText(_translate("MainWindow", "CPU VS CPU"))
